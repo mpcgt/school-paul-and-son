@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cela importe Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -10,15 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     >
+    <!-- Cela importe Google Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stack"
     >
+    <!-- Cela importe le CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Titre de l'onglet -->
     <title>Paul et Fils</title>
   </head>
   <body>
     <header>
+      <!-- Navigation -->
+      <!-- Logo situé à gaucbe du navbar -->
       <a href="#" title="Logo">
         <img src="img/logo.png" alt="Logo" class="logo">
       </a>
@@ -32,10 +38,13 @@
             <a class="navbar__link" href="contact.html">Contact</a>
           </li>
         </ul>
-        <button onclick="window.location.href='#'" class="nav__button">Devis gratuit</button>
+        <button onclick="window.location.href='#'" class="nav__button">
+          Devis gratuit
+        </button>
       </nav>
     </header>
     <main>
+      <!-- La section hero contenant un background avec du texte -->
       <section class="hero">
         <img
           src="img/homme-carton-camionnette.webp"
@@ -56,6 +65,7 @@
           </div>
         </div>
       </section>
+      <!-- Section à propos contenant un texte, un bouton et une image -->
       <section class="about">
         <p class="about__title">Paul et fils Déménagement</p>
         <p class="about__paragraph">
@@ -70,6 +80,7 @@
           alt="Un homme porte un carton"
         >
       </section>
+      <!-- Sections services contenant 4 blocs avec un service chacun avec un système de grid -->
       <section class="services">
         <h1 class="services__title_primary">Nos services</h1>
         <div class="services__proximity">
@@ -108,7 +119,7 @@
           <button class="services__button">Lire plus</button>
         </div>
         <div class="services__packing_unpacking">
-          <img src="img/carton.webp" class="services__img" alt="Un carton">
+          <img src="img/carton.webp" class="services__img" alt="Un carton" >
           <p class="services__title">Emballer et déballer</p>
           <p class="services__paragraph">
             Paragraphe. Cliquez ici pour ajouter votre propre texte.
@@ -117,6 +128,7 @@
           <button class="services__button">Lire plus</button>
         </div>
       </section>
+      <!-- Section contenant un background avec un texte et des blocs avec du texte et une icône -->
       <section class="opinion">
         <img
           src="img/2hommes-portent-un-meuble.webp"
@@ -143,6 +155,7 @@
           <!-- Un truc -->
         </div>
       </section>
+      <!-- Section avec des logos -->
       <section class="partner">
         <img src="img/logo-a+.JPG" alt="A+ Businesses">
         <img src="img/logo-golbal-moving.JPG" alt="Global Moving LLC">
@@ -156,6 +169,7 @@
         >
         <img src="img/logo-movtop.JPG" alt="Movtop">
       </section>
+      <!-- Section contenant un formulaire et le texte -->
       <section class="quote">
         <div class="quote__text">
           <h1 class="quote__title">Votre devis gratuit</h1>
@@ -195,6 +209,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
       <div class="footer__primary">
         <img src="img/logo.png" alt="Logo" class="footer__logo">
@@ -204,6 +219,7 @@
       </div>
 
       <div class="footer__contact">
+        <div class="spacing_text"></div>
         <p class="footer__title">CONTACT</p>
         <p>Tél : 01 23 45 67 89</p>
         <p>E-mail : info@monsite.fr</p>
@@ -213,6 +229,7 @@
       </div>
 
       <div class="footer__schedule">
+        <div class="spacing_text"></div>
         <p class="footer__title">HORAIRES D'OUVERTURE</p>
         <p>Lun-Ven : 7h - 22h</p>
         <p>Samedi : 8h - 22h</p>
@@ -220,6 +237,7 @@
       </div>
 
       <div class="footer__resource">
+        <div class="spacing_text"></div>
         <p class="footer__title">RESSOURCES</p>
         <a href="#">Adresses</a>
         <a href="#">Conseils</a>

@@ -1,10 +1,13 @@
+// Cela permet d'importer les variables
 @import "../variables";
 
+// Modification du style avec un fond noir, mettre la largeur à 100%
 header {
   background-color: $black;
   width: 100%;
   text-align: center;
 
+  // Styliser pour les plus grands écrans
   @media (min-width: $desktop) {
     display: flex;
     align-items: center;
@@ -12,14 +15,18 @@ header {
   }
 }
 
+// Modification de la taille du logo
 .logo {
   width: 25%;
+  // Styliser pour les plus grands écrans
   @media (min-width: $desktop) {
     width: 20%;
   }
 }
 
+// Modification de styles sur les liens
 .navbar__link {
+  // Styliser pour les plus grands écrans
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: column;
@@ -37,8 +44,10 @@ ul {
   padding: 0;
 }
 
+// Modifier l'emplacement des liens
 li {
   list-style: none;
+  // Styliser pour les plus grands écrans
   @media (min-width: $desktop) {
     position: absolute;
     display: flex;
@@ -50,6 +59,7 @@ li {
   }
 }
 
+// Styliser le bouton
 .nav__button {
   background-color: $orange;
   width: 100px;
@@ -58,6 +68,7 @@ li {
   margin-bottom: 10px;
   border: 0px;
   border-radius: 10px;
+  // Styliser pour les plus grands écrans
   @media (min-width: $desktop) {
     width: 200px;
     margin: 0;

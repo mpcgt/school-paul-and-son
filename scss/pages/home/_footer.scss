@@ -1,20 +1,22 @@
 footer {
   background-color: $black;
   color: $white;
-  text-align: start;
+  text-align: center;
   padding: 50px;
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
     column-count: 4;
+    text-align: start;
     justify-content: space-between;
   }
 }
 
 .footer__logo {
   width: 25%;
-  @media (min-width: $desktop) {
+  @media (max-width: $mobile) {
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 }
 

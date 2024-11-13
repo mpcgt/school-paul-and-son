@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   background-color: hsl(0, 0%, 7%);
   width: 100%;
@@ -73,7 +79,7 @@ li {
 
 img {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero__title {
@@ -556,11 +562,11 @@ select {
     line-height: 1;
     font-size: 50px;
     padding-bottom: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 200px;
     margin-bottom: 90px;
     height: 20px;
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -574,7 +580,7 @@ select {
     text-align: start;
     line-height: 1;
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 1000px;
     height: 20px;
     width: 35%;
@@ -706,7 +712,7 @@ select {
 footer {
   background-color: hsl(0, 0%, 7%);
   color: hsl(0, 0%, 100%);
-  text-align: start;
+  text-align: center;
   padding: 50px;
 }
 @media (min-width: 1440px) {
@@ -715,6 +721,7 @@ footer {
     flex-direction: row;
     -moz-column-count: 4;
          column-count: 4;
+    text-align: start;
     justify-content: space-between;
   }
 }
@@ -722,9 +729,10 @@ footer {
 .footer__logo {
   width: 25%;
 }
-@media (min-width: 1440px) {
+@media (max-width: 375px) {
   .footer__logo {
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -761,10 +769,4 @@ a {
 
 i {
   padding-bottom: 30px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=main.css.map */

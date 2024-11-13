@@ -1,10 +1,20 @@
-@import "./pages/home/navbar";
-@import "./pages/home/hero";
-@import "./pages/home/about";
-@import "./pages/home/services";
-@import "./pages/home/opinion";
-@import "./pages/home/partner";
-@import "./pages/home/quote";
-@import "./pages/home/contact";
-@import "./pages/home/footer";
+// Réinitialisation des styles
 @import "./pages/home/config";
+// Importer la navigation
+@import "./pages/home/navbar";
+// Importer la section "Hero" contenant un background
+@import "./pages/home/hero";
+// Importer la section de à propos
+@import "./pages/home/about";
+// Importer la section des services
+@import "./pages/home/services";
+// Importer la section avec un background et du texte
+@import "./pages/home/opinion";
+// Importer la section avec des logos des entreprises
+@import "./pages/home/partner";
+// Importer la section du formulaire
+@import "./pages/home/quote";
+// Importer la section de contact
+@import "./pages/home/contact";
+// Footer
+@import "./pages/home/footer";
