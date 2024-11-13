@@ -1,0 +1,72 @@
+.about {
+  background-color: $orange;
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+  @media (min-width: $desktop) {
+    bottom: 250px;
+    width: 100%;
+    display: inline-flex;
+}
+}
+
+.about__title {
+  color: $white;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 10px;
+  line-height: 0.75;
+  @media (min-width: $desktop) {
+    display: block;
+    text-align: start;
+    line-height: 1;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-bottom: 90px;
+    height: 20px;
+    width: 40%;
+  }
+}
+
+.about__paragraph {
+  padding-top: 10px;
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    text-align: start;
+    line-height: 1;
+    font-size: 20px;
+    margin-top: 225px;
+    margin-left: 60px;
+    height: 20px;
+    width: 35%;
+  }
+}
+
+.about__button {
+  background-color: $black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: $white;
+  border: none;
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    margin-top: 325px;
+    margin-left: 60px;
+    height: 50px;
+    width: 200px;
+}
+}
+
+.about__img {
+    @media (min-width: $desktop) {
+        width: 700px;
+        margin-left: 125px;
+    }
+}

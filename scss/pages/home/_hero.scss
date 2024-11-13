@@ -1,0 +1,69 @@
+@import "../variables";
+
+img {
+  width: 100%;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.hero__title {
+  color: $white;
+  position: relative;
+  bottom: 125px;
+  text-align: center;
+  @media (min-width: $desktop) {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: start;
+    left: 100px;
+    width: 45%;
+}
+}
+
+.hero__content {
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    @media (min-width: $desktop) {
+        position: relative;
+        bottom: 400px;
+    }
+}
+
+.hero__contact {
+  display: flex;
+  position: relative;
+  bottom: 60px;
+  height: 100px;
+  @media (min-width: $desktop) {
+    width: 30%;
+    left: 100px;
+}
+}
+
+.hero__phone {
+  background-color: $black;
+  color: $white;
+  width: 50%;
+  @media (min-width: $desktop) {
+    padding-top: 30px;
+  }
+}
+
+.hero__phone_number {
+  font-weight: 800;
+}
+
+.hero__start_online {
+    position: relative;
+  background-color: $orange;
+  width: 50%;
+  padding-left: 20px;
+  text-align: start;
+  @media (min-width: $desktop) {
+    padding-top: 25px;
+  }
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -1,1 +1,10 @@
-@use "pages";
+@import "./pages/home/navbar";
+@import "./pages/home/hero";
+@import "./pages/home/about";
+@import "./pages/home/services";
+@import "./pages/home/opinion";
+@import "./pages/home/partner";
+@import "./pages/home/quote";
+@import "./pages/home/contact";
+@import "./pages/home/footer";
+@import "./pages/home/config";

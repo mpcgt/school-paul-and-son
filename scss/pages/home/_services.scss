@@ -1,0 +1,54 @@
+.services {
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    gap: 10px;
+  }
+}
+
+.services__title_primary {
+  @media (min-width: $desktop) {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    top: -130px;
+    height: 50px;
+  }
+}
+
+.services__title {
+  font-weight: 700;
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    width: 50%;
+  }
+}
+
+.services__paragraph {
+  @media (min-width: $desktop) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+  }
+}
+
+.services__button {
+  background-color: $orange;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-weight: 700;
+  @media (min-width: $desktop) {
+  }
+}

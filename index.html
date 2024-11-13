@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stack"
+    >
+    <link rel="stylesheet" href="css/main.css">
     <title>Paul et Fils</title>
   </head>
   <body>
     <header>
-      <a href="#" alt="Logo">
-        <img src="img/logo.png" alt="Logo" />
+      <a href="#" title="Logo">
+        <img src="img/logo.png" alt="Logo" class="logo">
       </a>
       <nav>
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Conseils</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a class="navbar__link" href="#">Accueil</a>
+            <a class="navbar__link" href="#">À propos</a>
+            <a class="navbar__link" href="#">Services</a>
+            <a class="navbar__link" href="#">Conseils</a>
+            <a class="navbar__link" href="contact.html">Contact</a>
+          </li>
         </ul>
-        <button href="#" class="nav__button">Devis gratuit</button>
+        <button onclick="window.location.href='#'" class="nav__button">Devis gratuit</button>
       </nav>
     </header>
     <main>
@@ -34,22 +41,23 @@
           src="img/homme-carton-camionnette.webp"
           class="hero__img"
           alt="Un homme qui prend un carton à coté de sa camionnette"
-        />
+        >
         <div class="hero__content">
           <h1 class="hero__title">Déménager n'a jamais été aussi facile</h1>
-          <div class="hero__phone">
-            <p>APPELEZ-NOUS</p>
-            <p class="hero__phone_number">01 23 45 67 89</p>
-          </div>
-          <div class="hero__start_online">
-            <p>COMMENCER EN LIGNE</p>
-            <p>Devis gratuit en quelques secondes</p>
+          <div class="hero__contact">
+            <div class="hero__phone">
+              <p>APPELEZ-NOUS</p>
+              <p class="hero__phone_number">01 23 45 67 89</p>
+            </div>
+            <div class="hero__start_online">
+              <p><span class="bold">COMMENCER EN LIGNE</span></p>
+              <p>Devis gratuit en quelques secondes</p>
+            </div>
           </div>
         </div>
       </section>
       <section class="about">
-        <p class="about__title">Paul et fils</p>
-        <p class="about__title">Déménagement</p>
+        <p class="about__title">Paul et fils Déménagement</p>
         <p class="about__paragraph">
           Paragraphe. Double cliquez ici ou cliquez sur Modifier texte pour
           ajouter votre propre text ou changer de police. Décrivez vos services
@@ -60,15 +68,16 @@
           src="img/homme-porte-carton.webp"
           class="about__img"
           alt="Un homme porte un carton"
-        />
+        >
       </section>
       <section class="services">
+        <h1 class="services__title_primary">Nos services</h1>
         <div class="services__proximity">
           <img
             src="img/2hommes-camionnette.webp"
             class="services__img"
             alt="2 hommes portent un carton"
-          />
+          >
           <p class="services__title">Déménagement à proximité</p>
           <p class="services__paragraph">
             Paragraphe. Cliquez ici pour ajouter votre propre texte.
@@ -81,7 +90,7 @@
             src="img/camionnette.webp"
             class="services__img"
             alt="Une camionnette"
-          />
+          >
           <p class="services__title">Déménagement longue distance</p>
           <p class="services__paragraph">
             Paragraphe. Cliquez ici pour ajouter votre propre texte.
@@ -90,7 +99,7 @@
           <button class="services__button">Lire plus</button>
         </div>
         <div class="services__storage">
-          <img src="img/garage.webp" class="services__img" alt="Un garage" />
+          <img src="img/garage.webp" class="services__img" alt="Un garage">
           <p class="services__title">Services de stockage</p>
           <p class="services__paragraph">
             Paragraphe. Cliquez ici pour ajouter votre propre texte.
@@ -99,7 +108,7 @@
           <button class="services__button">Lire plus</button>
         </div>
         <div class="services__packing_unpacking">
-          <img src="img/carton.webp" class="services__img" alt="Un carton" />
+          <img src="img/carton.webp" class="services__img" alt="Un carton">
           <p class="services__title">Emballer et déballer</p>
           <p class="services__paragraph">
             Paragraphe. Cliquez ici pour ajouter votre propre texte.
@@ -113,44 +122,44 @@
           src="img/2hommes-portent-un-meuble.webp"
           class="opinion__img"
           alt="2 hommes qui portent un meuble"
-        />
+        >
         <h1 class="opinion__title">Un service de confiance</h1>
-        <div class="opinion__">
-          <div class="opinion__?_one">
-            <img src="img/logo-task.png" alt="" />
+        <div class="opinion__category">
+          <div class="opinion__category_one">
+            <span class="material-symbols-outlined"> stack </span>
             <h1>Déménagement longue distance</h1>
           </div>
-          <div class="opinion__?_one">
-            <img src="img/logo-task.png" alt="" />
+          <div class="opinion__category_two">
+            <span class="material-symbols-outlined"> stack </span>
             <h1>Assurance sur vos biens</h1>
           </div>
-          <div class="opinion__?_one">
-            <img src="img/logo-task.png" alt="" />
+          <div class="opinion__category_three">
+            <span class="material-symbols-outlined"> stack </span>
             <h1>95% de taux de recommandation</h1>
           </div>
         </div>
-        <div class="satisfied_customers">
+        <div class="opinion__satisfied_customers">
           <h1>Nos clients satisfaits</h1>
           <!-- Un truc -->
         </div>
       </section>
       <section class="partner">
-        <img src="img/logo-a+.JPG" alt="A+ Businesses" />
-        <img src="img/logo-golbal-moving.JPG" alt="Global Moving LLC" />
+        <img src="img/logo-a+.JPG" alt="A+ Businesses">
+        <img src="img/logo-golbal-moving.JPG" alt="Global Moving LLC">
         <img
           src="img/logo-american-moving.JPG"
           alt="American Moving association"
-        />
+        >
         <img
           src="img/logo-california-bestmover.JPG"
           alt="California BestMover"
-        />
-        <img src="img/logo-movtop.JPG" alt="Movtop" />
+        >
+        <img src="img/logo-movtop.JPG" alt="Movtop">
       </section>
       <section class="quote">
         <div class="quote__text">
-          <h1>Votre devis gratuit</h1>
-          <p>
+          <h1 class="quote__title">Votre devis gratuit</h1>
+          <p class="quote__paragraph">
             Paragraphe. Cliquez ici pour ajouter votre propre texte et le
             modifier.
           </p>
@@ -158,19 +167,18 @@
         <div class="quote__form">
           <form method="POST">
             <label for="city__move">Ville déménagement</label>
-            <input type="text" id="city__move" name="city__move" required />
-            <label for="city__move_in">Ville emménagement</label>
+            <input type="text" id="city__move" name="city__move" required>
+            <label for="city__move_in_1">Ville emménagement</label>
             <input
               type="text"
-              id="city__move_in"
+              id="city__move_in_1"
               name="city__move_in"
               required
-            />
+            >
             <label for="date__move">Date déménagement</label>
-            <input type="text" id="date__move" name="date__move" required />
-            <label for="city__move_in">Nombre de pièces</label>
-            <select name="city__move_in" id="city__move_in">
-              <option value=""></option>
+            <input type="date" id="date__move" name="date__move" required>
+            <label for="number_of_rooms">Nombre de pièces</label>
+            <select name="number_of_rooms" id="number_of_rooms">
               <option value="number__one">1</option>
               <option value="number__two">2</option>
               <option value="number__three">3</option>
@@ -179,14 +187,54 @@
               <option value="number__six">6</option>
             </select>
             <label for="name">Nom</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required>
             <label for="phone">Téléphone</label>
-            <input type="text" id="phone" name="phone" required />
-            <input type="submit" value="Envoyer" class="quote__form__submit" />
+            <input type="text" id="phone" name="phone" required>
+            <input type="submit" value="Envoyer" class="quote__form__submit">
           </form>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer__primary">
+        <img src="img/logo.png" alt="Logo" class="footer__logo">
+
+        <p>Numéro de licence : 123-456-7890</p>
+        <p>© 2023 par Paul et fils. Créé avec Wix.com</p>
+      </div>
+
+      <div class="footer__contact">
+        <p class="footer__title">CONTACT</p>
+        <p>Tél : 01 23 45 67 89</p>
+        <p>E-mail : info@monsite.fr</p>
+
+        <p>15 rue du château</p>
+        <p>75001 Paris, France</p>
+      </div>
+
+      <div class="footer__schedule">
+        <p class="footer__title">HORAIRES D'OUVERTURE</p>
+        <p>Lun-Ven : 7h - 22h</p>
+        <p>Samedi : 8h - 22h</p>
+        <p>Dimanche : 8h - 23h</p>
+      </div>
+
+      <div class="footer__resource">
+        <p class="footer__title">RESSOURCES</p>
+        <a href="#">Adresses</a>
+        <a href="#">Conseils</a>
+        <a href="#">FAQ</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique en matière de cookies</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d’utilisation</a>
+
+        <div class="spacing_text"></div>
+
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
   </body>
 </html>

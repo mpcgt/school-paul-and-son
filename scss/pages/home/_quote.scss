@@ -1,0 +1,73 @@
+.quote {
+  text-align: center;
+  background-color: $orange;
+  padding-bottom: 20px;
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    gap: 10px;
+  }
+}
+
+.quote__title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $white;
+  @media (min-width: $desktop) {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 30%;
+  }
+}
+
+.quote__paragraph {
+  @media (min-width: $desktop) {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+    width: 15%;
+  }
+}
+
+.quote__form {
+  flex-wrap: wrap;
+  display: block;
+}
+
+label {
+display: block;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 25%;
+@media (max-width: $mobile) {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+}
+
+input {
+height: 30px;
+width: 170px;
+border: none;
+}
+
+select {
+height: 30px;
+width: 170px;
+border: none;
+}
+
+.quote__form__submit {
+display: block;
+margin: 0 auto;
+margin-top: 20px;
+background-color: $black;
+color: $white;
+}

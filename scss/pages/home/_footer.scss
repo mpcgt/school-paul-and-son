@@ -1,0 +1,53 @@
+footer {
+  background-color: $black;
+  color: $white;
+  text-align: start;
+  padding: 50px;
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    column-count: 4;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  width: 25%;
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+  }
+}
+
+.footer__title {
+  padding-bottom: 10px;
+}
+
+.spacing {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.spacing_text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer__primary,
+.footer__cntact,
+.footer__schedule,
+.footer_resource {
+  display: flex;
+  flex-direction: column;
+  column-count: 4;
+  justify-content: space-between;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: $white;
+}
+
+i {
+  padding-bottom: 30px;
+}
